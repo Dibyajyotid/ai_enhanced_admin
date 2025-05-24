@@ -59,7 +59,9 @@ export function AIChatLayout() {
       <div className="flex-1 overflow-y-auto px-4 pb-4 pt-6 space-y-4 relative z-10">
         {!hasInteracted ? (
           <div className="h-full flex flex-col items-center justify-center text-center gap-2">
-            <div className="text-2xl font-semibold">Hi, I'm Fin AI Copilot</div>
+            <div className="text-2xl font-semibold">
+              Hi, I&apos;m Fin AI Copilot
+            </div>
             <p className="text-gray-500 text-sm">
               Ask me anything about this conversation.
             </p>
