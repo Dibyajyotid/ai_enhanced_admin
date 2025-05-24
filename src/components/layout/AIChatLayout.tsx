@@ -71,7 +71,7 @@ export function AIChatLayout() {
                 key={index}
                 className={`max-w-[80%] p-4 rounded-2xl text-sm ${
                   message.role === "user"
-                    ? "ml-auto bg-indigo-600 text-white shadow-md"
+                    ? "ml-auto bg-blue-200 text-black shadow-md"
                     : "mr-auto bg-white/70 backdrop-blur-md text-gray-800 shadow"
                 }`}
               >
