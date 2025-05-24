@@ -3,7 +3,7 @@ import { AzureKeyCredential } from "@azure/core-auth";
 
 import { NextResponse } from "next/server";
 
-// const token = process.env.GITHUB_TOKEN;
+const token = process.env.GITHUB_TOKEN;
 const endpoint = "https://models.github.ai/inference";
 const model = "openai/gpt-4.1";
 
@@ -11,10 +11,7 @@ export async function POST(req: Request) {
   const { messages } = await req.json();
 
   try {
-    const client = ModelClient(
-      endpoint,
-      new AzureKeyCredential("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")
-    );
+    const client = ModelClient(endpoint, new AzureKeyCredential(token || ""));
 
     const response = await client.path("/chat/completions").post({
       body: {
