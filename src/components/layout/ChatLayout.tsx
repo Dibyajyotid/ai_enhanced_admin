@@ -1,5 +1,4 @@
 'use client'
-import { Chat } from "../Chat";
 import { InboxChatLayout } from "./InboxChatLayout";
 
 export function ChatLayout() {

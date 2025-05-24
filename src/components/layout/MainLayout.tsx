@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Navbar } from "../Navbar";
 import { RightPanel } from "../RightPanel";
-import { Inbox } from "../Inbox";
 import { ChatLayout } from "./ChatLayout";
 
 export function MainLayout() {

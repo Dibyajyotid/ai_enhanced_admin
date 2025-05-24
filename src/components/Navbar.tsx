@@ -50,7 +50,7 @@ export function Navbar({ onRightPanelToggle, isRightPanelOpen }: NavbarProps) {
   return (
     <div className="w-full border-b border-border bg-background">
       <div className="flex justify-between px-6 py-4">
-        {/* Left side - Menu button and title */}
+        {/* Left side */}
         <div className="flex items-center gap-4">
           <div className="text-lg font-medium text-foreground">Your inbox</div>
         </div>

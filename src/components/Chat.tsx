@@ -10,7 +10,6 @@ export function Chat({ selectedChat }: ChatProps) {
     <div className="h-screen w-[70vw] grid grid-rows-[minmax(0,1fr)_auto] bg-white">
       {selectedChat ? (
         <>
-          {/* Scrollable messages area */}
           <div className="overflow-y-auto p-4 space-y-4">
             {selectedChat.messages.map((message, index) => (
               <div
